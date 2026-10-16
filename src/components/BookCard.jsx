@@ -7,6 +7,7 @@ function BookCard({data, handleLikedList}) {
   const {title, author, image, language, pages} = data;
   const [like, setLike] = useState(false)
 
+  
   const likeHandler = () => {
     handleLikedList(data, like); //lifting state up
     setLike(like => !like);
